@@ -12,6 +12,7 @@ body{
 
 header{
     /* border: 2px solid red; */
+    /* box-shadow: .0rem .1rem .5rem rgb(25, 56, 67); */
     /* margin-block: 3rem; */
 }
 
@@ -26,7 +27,7 @@ header{
 
 .Top-container{
     /* border: 2px solid blue; */
-    margin-block: 2rem;
+    margin-top: 1rem;
     display: flex;
 }
 
@@ -35,6 +36,14 @@ header{
     display: flex;
     gap: 0.2rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .image{
+                  margin-left: 1rem;
+                  gap: 0.5rem;
+           }
+        }
 
 .image >h1{
     color: white;
@@ -48,6 +57,22 @@ header{
     width: 4rem;
 }
 
+label, .check_icon{
+    display: none;
+}
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                label{
+                  display: block;
+                  color: white;
+                  margin: auto;
+                  font-weight: 900;
+                  font-size: 2rem;
+                  margin-left: 6.5rem;
+           }
+        }
+
 .Top-right{
     /* border: 2px solid goldenrod; */
     width: 1000px;
@@ -55,6 +80,24 @@ header{
     align-items: center;
     gap: 3rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Top-right{
+                  display: none;
+                  position: absolute;
+                  width: 340px;
+                  padding: 1.8rem;
+                  top: 4.4rem;
+                  right: 3px;
+                  z-index: 1;
+                  background-color: #91b2ac;
+                  opacity: .97;
+                  border-bottom: 4px solid #094c3d;
+                  transform: translate(100%, 0);
+                  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+           }
+        }
 
 .Top-item{
     /* border: 2px solid blanchedalmond; */
@@ -65,12 +108,38 @@ header{
     gap: 3rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Top-item{
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+           }
+        }
+
 .Top-item >a{
     color: rgb(136, 132, 132);
     /* border: 2px solid red; */
     margin-left: 1.4rem;
     text-decoration: none;
     /* gap: 2rem; */
+}
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Top-item >a{
+                  width: 100%;
+                  color: #094c3d;
+                  font-size: 18px;
+                  padding: 0.6rem;
+                  text-align: right;
+                  border-bottom: 4px solid #fff;
+           }
+        }
+
+#toggle:checked + .Top-right {
+    display: block;
+    transform: none;
 }
 
 .Top-item > a:hover{
@@ -82,10 +151,25 @@ header{
     margin-top: 5rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .banner{
+                  /* border: 2px solid greenyellow; */
+           }
+        }
+
 .banner-container{
     display: flex;
     /* border: 2px solid blue */
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .banner-container{
+                    display: inline;
+                  /* border: 2px solid rgb(255, 47, 47); */
+           }
+        }
 
 .banner-content{
     /* border: 2px solid blue; */
@@ -93,11 +177,29 @@ header{
     margin-block: 3rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .banner-content{
+                  /* border: 2px solid rgb(255, 47, 241); */
+                  width: 21rem;
+                  margin-block: 1rem;
+           }
+        }
+
 .banner-content >h1{
     color: white;
     font-size: 2.5rem;
     margin-top: 5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .banner-content >h1{
+                  /* border: 2px solid greenyellow; */
+                  width: 20rem;
+                  margin-left: 0.5rem;
+           }
+        }
 
 .banner-content >p{
     color: white;
@@ -106,6 +208,15 @@ header{
     width: 32rem;
     margin-block: 3rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .banner-content >p{
+                  /* border: 2px solid greenyellow; */
+                  width: 19rem;
+                  margin-left: 0.8rem;
+           }
+        }
 
 .banner-content > button{
     padding: 0.8rem 2.2rem;
@@ -116,6 +227,13 @@ header{
     color: #fff;
     margin-block: 1.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .banner-content >button{
+                  margin-left: 5rem;
+           }
+        }
 
 .banner-content > button:hover{
     background-color: white;
@@ -129,15 +247,40 @@ header{
     /* margin-left: 5rem; */
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .banner-image{
+                  /* border: 2px solid greenyellow; */
+                  width: 21.5rem;
+                  height: 50vh;
+           }
+        }
+
 .banner-image >img{
     /* border: 2px solid gold; */
     width: 30rem;
     height: 98vh;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .banner-image >img{
+                  /* border: 2px solid rgb(71, 47, 255); */
+                  width: 21.2rem;
+                  height: 50vh;
+           }
+        }
+
 .Pro{
     /* border: 2px solid goldenrod; */
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Pro{
+                  /* border: 2px solid greenyellow; */
+           }
+        }
 
 .product{
     /* border: 2px solid hotpink; */
@@ -145,6 +288,15 @@ header{
     gap: 2.5rem;
     display: grid;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product{
+                  /* border: 2px solid rgb(255, 47, 241); */
+                  display: inline-block;
+                  width: 21.5rem;
+           }
+        }
 
 .productP{
     /* border: 2px solid firebrick; */
@@ -159,6 +311,14 @@ header{
     padding-top: 2.5rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .productP >h1{
+                  /* border: 2px solid greenyellow; */
+                  margin-left: 5rem;
+           }
+        }
+
 .product-box1{
         /* border: 2px solid red; */
         border-radius: 10px;
@@ -167,11 +327,29 @@ header{
         height: 50vh;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box1{
+                  /* border: 2px solid greenyellow; */
+                  width: 21rem;
+                  margin-block: 2rem;
+                  margin-left: 0.1rem;
+                  height: 35vh;
+           }
+        }
+
 .product-box1 >h1{
     /* border: 2px solid red; */
     color: white;
     font-size: 2.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box1 >h1{
+                    margin-left: 1.5rem;
+           }
+        }
 
 .product-box1 >h4{
     /* border: 2px solid red; */
@@ -179,6 +357,14 @@ header{
     font-size: 1.8rem;
     margin-block: 1.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box1 >h4{
+                    margin-left: 1.5rem;
+                    margin-block: 0.2rem;
+           }
+        }
 
 .product-box1 >button{
     padding: 0.8rem 1.5rem;
@@ -189,6 +375,14 @@ header{
     color: #fff;
     margin-block: 1rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box1 >button{
+                    margin-block: 1rem;
+                    margin-left: 1.5rem;
+           }
+        }
 
 .product-box1 >button:hover{
     background-color: white;
@@ -215,11 +409,29 @@ header{
         height: 50vh;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box2{
+                  /* border: 2px solid greenyellow; */
+                  width: 21rem;
+                  margin-block: 2rem;
+                  margin-left: 0.1rem;
+                  height: 35vh;
+           }
+        }
+
 .product-box2 >h1{
     /* border: 2px solid red; */
     color: white;
     font-size: 2.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box2 >h1{
+                    margin-left: 1.5rem;
+           }
+        }
 
 .product-box2 >h4{
     /* border: 2px solid red; */
@@ -227,6 +439,14 @@ header{
     font-size: 1.8rem;
     margin-block: 1.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box2 >h4{
+                    margin-left: 1.5rem;
+                    margin-block: 0.2rem;
+           }
+        }
 
 .product-box2 >button{
     padding: 0.8rem 1.5rem;
@@ -237,6 +457,14 @@ header{
     color: #fff;
     margin-block: 1rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box2 >button{
+                    margin-block: 1rem;
+                    margin-left: 1.5rem;
+           }
+        }
 
 .product-box2 >button:hover{
     background-color: white;
@@ -263,11 +491,29 @@ header{
         height: 50vh;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box3{
+                  /* border: 2px solid greenyellow; */
+                  width: 21rem;
+                  margin-block: 2rem;
+                  margin-left: 0.1rem;
+                  height: 35vh;
+           }
+        }
+
 .product-box3 >h1{
     /* border: 2px solid red; */
     color: white;
     font-size: 2.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box3 >h1{
+                    margin-left: 1.5rem;
+           }
+        }
 
 .product-box3 >h4{
     /* border: 2px solid red; */
@@ -275,6 +521,14 @@ header{
     font-size: 1.8rem;
     margin-block: 1.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box3 >h4{
+                    margin-left: 1.5rem;
+                    margin-block: 0.2rem;
+           }
+        }
 
 .product-box3 >button{
     padding: 0.8rem 1.5rem;
@@ -285,6 +539,14 @@ header{
     color: #fff;
     margin-block: 1rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box3 >button{
+                    margin-block: 1rem;
+                    margin-left: 1.5rem;
+           }
+        }
 
 .product-box3 >button:hover{
     background-color: white;
@@ -311,11 +573,29 @@ header{
     height: 50vh;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box4{
+                  /* border: 2px solid greenyellow; */
+                  width: 21rem;
+                  margin-block: 2rem;
+                  margin-left: 0.1rem;
+                  height: 35vh;
+           }
+        }
+
 .product-box4 >h1{
     /* border: 2px solid red; */
     color: white;
     font-size: 2.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box4 >h1{
+                    margin-left: 1.5rem;
+           }
+        }
 
 .product-box4 >h4{
     /* border: 2px solid red; */
@@ -323,6 +603,14 @@ header{
     font-size: 1.8rem;
     margin-block: 1.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box4 >h4{
+                    margin-left: 1.5rem;
+                    margin-block: 0.2rem;
+           }
+        }
 
 .product-box4 >button{
     padding: 0.8rem 1.5rem;
@@ -333,6 +621,14 @@ header{
     color: #fff;
     margin-block: 1rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .product-box4 >button{
+                    margin-block: 1rem;
+                    margin-left: 1.5rem;
+           }
+        }
 
 .product-box4 >button:hover{
     background-color: white;
@@ -356,15 +652,38 @@ header{
     margin-block: 3rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .congnite{
+                    /* border: 2px solid red; */
+           }
+        }
+
 .conginited{
     /* border: 2px solid goldenrod; */
     display: flex;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .conginited{
+                    /* border: 2px solid rgb(255, 128, 0); */
+                    display: inline-block;
+           }
+        }
+
 .container{
     /* border: 2px solid greenyellow; */
     width: 33rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .container{
+                    /* border: 2px solid rgb(8, 0, 255); */
+                    width: 21.3rem;
+           }
+        }
 
 .container >h1{
     /* border: 2px solid chocolate; */
@@ -374,6 +693,16 @@ header{
     margin-top: 8rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .container >h1{
+                    /* border: 2px solid rgb(8, 0, 255); */
+                    width: 18rem;
+                    margin-left: 1.5rem;
+                    margin-top: 5rem;
+           }
+        }
+
 .container >h3{
     /* border: 2px solid red; */
     width: 15rem;
@@ -382,6 +711,15 @@ header{
     margin-block: 2rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .container >h3{
+                    /* border: 2px solid rgb(255, 0, 43); */
+                    width: 18rem;
+                    margin-left: 1.5rem;
+           }
+        }
+
 .container >p{
     /* border: 2px solid red; */
     width: 32rem;
@@ -389,6 +727,16 @@ header{
     font-size: 17px;
     margin-block: 2rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .container >p{
+                    /* border: 2px solid rgb(255, 0, 43); */
+                    width: 20.5rem;
+                    margin-block: 1rem;
+                    margin-left: 0.5rem;
+           }
+        }
 
 .container >button{
     padding: 0.8rem 1.5rem;
@@ -412,6 +760,15 @@ header{
     gap: 1.5rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Box{
+                    /* border: 2px solid rgb(0, 255, 17); */
+                    gap: 0.5rem;
+                    margin-left: 0.5rem;
+           }
+        }
+
 .Con1{
     /* border: 2px solid red; */
     height: 40vh;
@@ -421,6 +778,15 @@ header{
     background-size: cover;
     border-radius: 30px;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Con1{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    height: 20vh;
+                    width: 10rem;
+           }
+        }
 
 .Con2{
     /* border: 2px solid red; */
@@ -432,6 +798,15 @@ header{
     border-radius: 30px;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Con2{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    height: 20vh;
+                    width: 10rem;
+           }
+        }
+
 .Con3{
     /* border: 2px solid red; */
     height: 40vh;
@@ -441,6 +816,15 @@ header{
     background-size: cover;
     border-radius: 30px;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Con3{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    height: 20vh;
+                    width: 10rem;
+           }
+        }
 
 .Con4{
     /* border: 2px solid red; */
@@ -452,10 +836,26 @@ header{
     border-radius: 30px;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Con4{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    height: 20vh;
+                    width: 10rem;
+           }
+        }
+
 .Why{
     /* border: 2px solid blue; */
     margin-block: 2rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Why{
+                    /* border: 2px solid rgb(0, 255, 217); */
+           }
+        }
 
 .Why >h1{
     /* border: 2px solid white; */
@@ -465,6 +865,15 @@ header{
     margin-left: 8.4rem;
     margin-block: 2rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .Why >h1{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 15rem;
+                    margin-left: 3rem;
+           }
+        }
 
 .whyS{
     /* border: 2px solid red; */
@@ -477,11 +886,20 @@ header{
 
 .why1{
     border: 1px solid white;
-        background-color: rgba(33, 33, 33, 0.858);
+    background-color: rgba(33, 33, 33, 0.858);
     width: 28rem;
     border-radius: 26px;
     height: 43vh;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why1{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 11.5rem;
+                    height: 40vh;
+           }
+        }
 
 .why1 >h3{
     /* border: 2px solid darkgoldenrod; */
@@ -491,6 +909,15 @@ header{
     color: white;
     margin-block:1.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why1 >h3{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 11rem;
+                    margin-left: 0.2rem;
+           }
+        }
 
 .why1 >ul{
     /* border: 2px solid salmon; */
@@ -504,6 +931,16 @@ header{
     margin-block: 1rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why1 >ul >li{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 11rem;
+                    margin-left: 0.2rem;
+                    margin-block: 0.5rem;
+           }
+        }
+
 .why2{
     border: 1px solid white;
     background-color: rgba(33, 33, 33, 0.858);
@@ -512,6 +949,15 @@ header{
     margin-block: 2rem;
     height: 19vh;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why2{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 11rem;
+                    height: 18vh;
+           }
+        }
 
 .why2 >h3{
     /* border: 2px solid darkgoldenrod; */
@@ -522,10 +968,27 @@ header{
     color: white;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why2 >h3{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 10.5rem;
+                    margin-left: 0.2rem;
+                    /* height: 18vh; */
+           }
+        }
+
 .const{
     /* border: 2px solid white; */
     margin-left: 1.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .const{
+                    margin-left: 0.1rem;
+           }
+        }
 
 .why3{
     border: 1px solid white;
@@ -534,6 +997,15 @@ header{
     border-radius: 26px;
     height: 19vh;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why3{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 9.5rem;
+                    height: 18vh;
+           }
+        }
 
 .why3 >h3{
     /* border: 2px solid darkgoldenrod; */
@@ -544,6 +1016,16 @@ header{
     color: white;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why3 >h3{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 9rem;
+                    margin-left: 0.2rem;
+                    /* height: 18vh; */
+           }
+        }
+
 .why4{
     border: 1px solid white;
     background-color: rgba(33, 33, 33, 0.858);
@@ -552,6 +1034,15 @@ header{
     height: 19vh;
     margin-top: 1.8rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why4{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 9.5rem;
+                    height: 18vh;
+           }
+        }
 
 .why4 >h3{
     /* border: 2px solid darkgoldenrod; */
@@ -562,6 +1053,16 @@ header{
     color: white;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why4 >h3{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 9rem;
+                    margin-left: 0.2rem;
+                    /* height: 18vh; */
+           }
+        }
+
 .why5{
     border: 1px solid white;
     background-color: rgba(33, 33, 33, 0.858);
@@ -570,6 +1071,15 @@ header{
     margin-top: 2.3rem;
     height: 19vh;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why5{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 9.5rem;
+                    height: 18vh;
+           }
+        }
 
 .why5 >h3{
     /* border: 2px solid darkgoldenrod; */
@@ -580,10 +1090,28 @@ header{
     color: white;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .why5 >h3{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 9rem;
+                    margin-left: 0.2rem;
+                    /* height: 18vh; */
+           }
+        }
+
 .industry-container{
     /* border: 2px solid red; */
     margin-block: 2rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .industry-container{
+                    border: 1px solid white;
+                    overflow-x: scroll;
+           }
+        }
 
 .industry-container >h1{
     /* border: 2px solid wheat; */
@@ -594,11 +1122,28 @@ header{
     margin-block: 1.5rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .industry-container >h1{
+                    /* border: 2px solid rgb(0, 255, 217); */
+                    width: 11rem;
+                    margin-left: 5rem;
+           }
+        }
+
 .industry-content{
     /* border: 2px solid darkorange; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .industry-content{
+                   gap: 2rem;
+                   margin-left: 1rem;
+           }
+        }
 
 .finance-box{
     /* border: 2px solid darkred; */
@@ -839,6 +1384,13 @@ header{
     /* border: 2px solid red; */
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .part-container{
+                   overflow-x: scroll;
+           }
+        }
+
 .part-container >h1{
     /* border: 2px solid salmon; */
     width: 15rem;
@@ -846,6 +1398,14 @@ header{
     margin-left: 8rem;
     color: white;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .part-container >h1{
+                    width: 10rem;
+                    margin-left: 5rem;
+           }
+        }
 
 .part-container >h4{
     /* border: 2px solid salmon; */
@@ -856,10 +1416,27 @@ header{
     color: white;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .part-container >h4{
+                    width: 18rem;
+                    margin-left: 2rem;
+           }
+        }
+
 .who{
+    /* border: 2px solid white; */
     display: flex;
     gap: 2rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .who{
+                   width: 59em;
+                   gap: 1rem;
+           }
+        }
 
 .part-content1{
     /* border: 2px solid red; */
@@ -871,6 +1448,14 @@ header{
     background-size: cover;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .part-content1{
+                    width: 11rem;
+                    /* margin-left: 2rem; */
+           }
+        }
+
 .part-content2{
     /* border: 2px solid red; */
     background-color: rgb(39, 39, 39);
@@ -881,12 +1466,28 @@ header{
     background-size: cover;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .part-content2{
+                    width: 11rem;
+                    /* margin-left: 2rem; */
+           }
+        }
+
 .part-content3{
     /* border: 2px solid red; */
     background-color: rgb(39, 39, 39);
     height: 30vh;
     width: 11.5rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .part-content3{
+                    width: 11rem;
+                    /* margin-left: 2rem; */
+           }
+        }
 
 .part-content3 >img{
     /* border: 2px solid blue; */
@@ -904,6 +1505,14 @@ header{
     background-position: center;
     background-size: cover;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .part-content4{
+                    width: 11rem;
+                    /* margin-left: 2rem; */
+           }
+        }
 .part-content5{
     /* border: 2px solid red; */
     height: 30vh;
@@ -914,12 +1523,27 @@ header{
     background-size: cover;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .part-content5{
+                    width: 11rem;
+                    /* margin-left: 2rem; */
+           }
+        }
+
 .box{
     border-bottom: 2px solid white;
     /* display: flex; */
     margin-block: 5rem;
     height: 50vh;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .box{
+                    width: 70rem;
+           }
+        }
 
 .contents{
     /* border: 2px solid firebrick; */
@@ -965,8 +1589,17 @@ header{
 .cover{
     /* border: 2px solid rgb(87, 0, 0); */
     display: flex;
+
     gap: 2rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .cover{
+                border: 1px solid white;
+                overflow-x: scroll;
+           }
+        }
 
 .box1{
     /* border: 2px solid red; */
@@ -1015,7 +1648,12 @@ header{
 .box1_media >img{
     /* border: 2px solid red; */
     display: flex;
+    opacity: .58;
     /* gap: 4rem; */
+}
+
+.box1_media >img:hover{
+    opacity: .9;
 }
 
 .box1-content{
@@ -1072,6 +1710,14 @@ header{
     gap: 25rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .futar{
+                /* border: 2px solid darkgoldenrod; */
+                gap: 2rem;
+           }
+        }
+
 .futar >h1{
     width: 20rem;
     font-size: 25px;
@@ -1079,9 +1725,31 @@ header{
     margin-block: 1rem;
 }
 
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .futar >h1{
+                /* border: 2px solid darkgoldenrod; */
+                width: 13rem;
+                height: 4vh;
+                margin-top: 2rem;
+                font-size: 15px;
+           }
+        }
+
 .futar >h2{
     width: 20rem;
     font-size: 25px;
     color: white;
     margin-block: 1rem;
 }
+
+              /* Responsiveness code */
+              @media(min-width: 162px) and (max-width: 460px){
+                .futar >h2{
+                /* border: 2px solid darkgoldenrod; */
+                width: 18rem;
+                height: 4vh;
+                margin-top: 2.3rem;
+                font-size: 15px;
+           }
+        }
