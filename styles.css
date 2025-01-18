@@ -1645,14 +1645,14 @@ label, .check_icon{
     margin-block: 2rem;
 }
 
-.box1_media >img{
+.box1_media >a{
     /* border: 2px solid red; */
     display: flex;
     opacity: .58;
     /* gap: 4rem; */
 }
 
-.box1_media >img:hover{
+.box1_media >a:hover{
     opacity: .9;
 }
 
